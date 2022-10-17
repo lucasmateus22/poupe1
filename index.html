@@ -8,32 +8,48 @@
     <title>Document</title>
 </head>
 <body>
-  <header class="cabecalho-header">
-    <img src="" alt="" class="logo-site-header">
-    <nav class="nav-menu-header">
+  <header class="cabecalho">
+    <img src="./logotipo.jpg" alt="" class="logo-site">
+    <h1>PoupeVoltz</h1>
+    <nav class="nav-menu cf">
       <a href="#" class="link-menu-header">Sobre nós</a>
-      <a href="#" class="link-menu-header">Serviços</a>
+      <a href="#" class="link-menu-header" id="servc">Serviços</a>
       <a href="#" class="link-menu-header">Contato</a>
-      <a href="#" class="link-menu-header">Perfil</a>        
+     <button onclick="showDiv('boxL')" id="buttonPerfil">Perfil</button>       
     </nav>
   </header>
+  <div id="boxL">
+    <div class="first-box">
+        <div class="login">
+        <h3>Login</h3>
+        <label for="">Nome:</label><input type="text">
+        <label for="">Sobrenome:</label><input type="text">
+        <label for="">Telefone/E-mail:</label><input type="email" name="" id="">
+        <label for="">Senha:</label><input type="password" name="" id="">
+        <label for="">Repetir a senha:</label><input type="password" name="" id="">
+    </div>
+     <button onclick="dlzDiv('secondBox')" id="button-skip"><span>&#10093;</span></button>
+     <div id="secondBox">aa</div>
+   </div>  
+   
+</div>
   <section class="card1">  
     <div class="container-img">   
       <ul class="slide">
         <li>
           <input type="radio" name="slide" id="slide1" checked>
           <label for="slide1"></label>
-          <img src="./Assets/image-1.jpg" alt="" class="image-slide image" id="img1">
+          <img src="./image-1.jpg" alt="" class="image-slide image" id="img1">
         </li>
         <li>
           <input type="radio" name="slide" id="slide2" checked>
           <label for="slide2"></label>
-          <img src="./Assets/image-2.jpg" alt="" class="image-slide image" id="img2">
+          <img src="./image-2.jpg" alt="" class="image-slide image" id="img2">
         </li>
         <li>
           <input type="radio" name="slide" id="slide3" checked>
           <label for="slide3"></label>
-          <img src="./Assets/image-3.webp" alt="" class="image-slide image" id="img3">
+          <img src="./image-3.webp" alt="" class="image-slide image" id="img3">
         </li>
       </ul>    
        </div>
@@ -62,11 +78,43 @@
   <div class="linha-divisao">
     <div class="linha---"></div>
   </div>
-  <section class="card1">   
+  <section class="card2">   
     <h3>Consumo consciente</h3>
+
+      <div id="calculater">
+        
+        <div class="opperatMath">
+          
+        
+            <label for="">Potência do aparelho:</label>
+            <input type="number" name="" class="test" id="potenc">
+            <label for="">Horas de uso:</label>
+            <input type="number" name="" class="test" id="hourUse">
+            <label for="">Tempo de uso por dia:</label>
+            <input type="number" name="" class="test" id="timeUse">
+            <label for="">Preço KW/H:</label>
+            <input type="number" name="" class="test" id="valueHour">
+            <label for="">Dias de uso:</label>
+            <input type="number" name="" class="test" id="dayUse">
+            
+        </div>
+        <button onclick="" class="go" id="butt-math">Calcular</button>
+          <div id="display"> </div>
+      </div>
+
+    </div>
   </section>
-  <section class="card1">   
-    <h3>Consumo consciente</h3>
+  <div class="linha-divisao">
+    <div class="linha---"></div>
+  </div>
+  <section class="card3">   
+    <h2>Titulo</h2>
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet. Et illo corrupti aut doloribus totam et cumque deserunt sit corrupti nemo. Qui tenetur neque voluptatem mollitia et laboriosam quibusdam nam aspernatur mollitia non voluptas voluptas.
+
+            Et omnis soluta vel voluptate nihil </p>
+            
+        </div>
   </section>
   <footer class="footer-page">
     <div class="footer-content">
@@ -77,10 +125,10 @@
     </div>
     <div class="footer-content">
       <h4>Redes</h4>
-      <ul>
-      <li>Rede 1</li>
-      <li>Rede 2</li>
-      <li>Rede 3</li>
+      <ul class="redes-soci">
+      <li><a href="">Rede 1</a></li>
+      <li><a href="">Rede 2</a></li>
+      <li><a href="">Rede 3</a></li>
       </ul>
     </div>
     <div class="footer-content">
