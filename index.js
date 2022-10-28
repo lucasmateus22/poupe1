@@ -11,13 +11,6 @@ function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0; 
 };
-/**----------------------------------------------------------------------------- */
-/**window.onscroll=function(){divSide()};
-function divSide(){
-    if(document.body.scroll > 600 || document.documentElement.scroll > 600){
-        document.getElementById("divResponsive").style.animation
-    }
-} */
 window.addEventListener('scroll', ()=>{
     document.body.style.setProperty('--scroll', window.pageXOffset / 
     (document.body.offsetHeight - window.innerHeight));
